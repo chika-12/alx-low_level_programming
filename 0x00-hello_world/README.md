@@ -1,1 +1,1 @@
-puts
+intel
