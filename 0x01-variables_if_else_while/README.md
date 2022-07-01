@@ -1,1 +1,1 @@
-last digit
+print
