@@ -1,1 +1,1 @@
-print alphabet
+five print
