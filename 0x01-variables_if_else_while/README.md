@@ -1,1 +1,1 @@
-six print
+seven print
