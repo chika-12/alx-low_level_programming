@@ -5,11 +5,8 @@
  */
 void print_numbers(void)
 {
-int char;
-for (char = 48; char < 58; char++)
-{
-_putchar(char);
-}
+int x;
+for (x = 0; x < 10; x++)
+_putchar(x + '0');
 _putchar('\n');
-return (0)
 }
