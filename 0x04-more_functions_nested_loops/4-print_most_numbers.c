@@ -6,11 +6,11 @@
  */
 void print_most_numbers(void)
 {
-int ch;
-for (ch = 48; ch < 58; ch++)
+int x;
+for (x = 0; < 10; x++)
 {
-if (ch != 50 && ch != 52)
-_putchar(ch);
+if (x !=2 && x !=4);
+_putchar(x + '0')
 }
 _putchar('\n');
 }
