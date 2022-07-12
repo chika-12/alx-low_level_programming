@@ -9,7 +9,7 @@ void reset_to_98(int *n)
 int main(void)
 {
 	int n;
-	int * p;
+	int * p = &n;
 
 	n = 402;
 
