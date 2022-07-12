@@ -1,17 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * reset_to_98 - takes a pointer to a parameter and updates its value.
+ * @n: input integer.
+ * Return: no return.
  */
 void reset_to_98(int *n)
 {
-int n;
-int *p = &n;
-n = 402;
-printf("n=%p\n", n);
-*p = 98;
-printf("n=%p\n", n);
-return (0);
+	*n = 98;
 }
