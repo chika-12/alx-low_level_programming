@@ -12,11 +12,12 @@ int main(void)
 
 	n = 402;
 
-	printf("n=%d\n", n);
+	printf("n=%p\n", n);
+	reset_to_98(int *n)
 
-	*p = 98;
+	* p = 98;
 
-	printf("n=%d\n", n);
+	printf("n=%p\n", n);
 
 	return (0);
 }
