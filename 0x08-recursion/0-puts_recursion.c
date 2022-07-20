@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * puts a function - a function that prints a string
  * n@ parameters, str, char
