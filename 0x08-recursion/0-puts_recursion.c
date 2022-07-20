@@ -1,14 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts a function - a function that prints a string
- * n@ parameters, str, char
- * Return: Always 0
+ * _puts_recursion - prints a string followed by a new line.
+ * @s: string
+ * Return: no return
  */
 void _puts_recursion(char *s)
-{
-	char str[] = "stream";
+{	
 
-	printf("%s", str);
-	return (0);
+	if (*s != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
 }
