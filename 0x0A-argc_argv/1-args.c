@@ -1,5 +1,3 @@
-s (12 sloc)  319 Bytes
-
 #include <stdio.h>
 /**
  * main - prints the number of arguments passed into it.
@@ -9,6 +7,6 @@ s (12 sloc)  319 Bytes
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc - 1);
+	printf("%d\n", argc);
 	return (0);
 }	
