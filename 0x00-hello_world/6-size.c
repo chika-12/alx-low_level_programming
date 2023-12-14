@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Checks the size of various types 
+ * main - Checks the size of various types
  * on my machine
  *
  * Return: Always 0(Success)
