@@ -20,5 +20,5 @@ int main(void)
 		putchar(alphabet);
 	}
 	putchar(10);
-	return(0);
+	return (0);
 }
