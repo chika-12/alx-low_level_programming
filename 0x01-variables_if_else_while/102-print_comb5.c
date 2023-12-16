@@ -12,7 +12,7 @@ int main(void)
 
 	for (num = 0; num < 100; num++)
 	{
-		for (num1 = num; num1 < 100; num1++)
+		for (num1 = 0; num1 < 100; num1++)
 		{
 			if (num < num1)
 			{
