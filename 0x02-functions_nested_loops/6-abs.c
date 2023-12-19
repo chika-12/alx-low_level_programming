@@ -11,26 +11,12 @@
 
 int _abs(int n)
 {
-	int count = 0;
-	int i;
-
-	if (n > 0)
+	if (n < 0)
 	{
-		for (i = 1; i <= n; i++)
-		{
-			count += 1;
-		}
+		return (-n);
 	}
-	else if (n < 0)
+	else
 	{
-		for (i = n; i < 0; i++)
-		{
-			count += 1;
-		}
+		return (n);
 	}
-	else if (n == INT_MAX)
-	{
-		count = INT_MAX;
-	}
-	return (count);
 }
