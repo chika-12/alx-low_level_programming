@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 /**
  * _abs - Prints absolute value
  * of a number
@@ -27,9 +28,9 @@ int _abs(int n)
 			count += 1;
 		}
 	}
-	else
+	else if (n == INT_MAX)
 	{
-		count = 0;
+		count = INT_MAX;
 	}
 	return (count);
 }
