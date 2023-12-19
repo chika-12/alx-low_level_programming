@@ -9,7 +9,7 @@ void print_alphabet_x10(void)
 	int n = 0;
 	char alph;
 
-	while (n <= 10)
+	while (n <= 9)
 	{
 		for (alph = 97; alph <= 122; alph++)
 		{
