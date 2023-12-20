@@ -13,12 +13,12 @@ int main(void)
 
 	for (index = 0; index < 1024; index++)
 	{
-		if (index % 3 == 0 || index % 5 ==0)
+		if (index % 3 == 0 || index % 5 == 0)
 		{
 			count += index;
 		}
 	}
-	printf("%f\n", count);
+	printf("%0.f\n", count);
 	return (0);
 }
 
