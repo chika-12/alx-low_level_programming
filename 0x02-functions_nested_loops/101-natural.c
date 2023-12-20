@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	double num = 1024;
 	int index;
 	double count;
 
@@ -19,7 +18,7 @@ int main(void)
 			count += index;
 		}
 	}
-	printf("%ld\n", count);
+	printf("%f\n", count);
 	return (0);
 }
 
