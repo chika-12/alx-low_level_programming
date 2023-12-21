@@ -14,4 +14,5 @@ void print_numbers(void)
 		_putchar(index + '0');
 		index++;
 	}
+	_putchar(10);
 }
