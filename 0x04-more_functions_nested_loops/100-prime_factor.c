@@ -24,7 +24,7 @@ int main(void)
 					break;
 				}
 			}
-			if (new_idx == index)/*Checking if the the only divisor of the factor is itself making it a prime*/
+			if (new_idx == index)
 			{
 				prime = index;
 				while (number % index == 0)
