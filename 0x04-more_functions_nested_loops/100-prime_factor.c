@@ -29,9 +29,9 @@ int main(void)
 				{
 					number /= index;
 				}
+
 			}
 		}
 	}
 	printf("%d\n", prime);
-	return (prime);
 }
