@@ -36,5 +36,5 @@ int main(void)
 		}
 	}
 	printf("%ld\n", prime);
-	return (prime);
+	return (0);
 }
