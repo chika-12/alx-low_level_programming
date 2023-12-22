@@ -32,6 +32,6 @@ int main(void)
 			}
 		}
 	}
-	printf("Largest prime is %d\n", prime);
+	printf("%d\n", prime);
 	return (prime);
 }
