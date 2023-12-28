@@ -17,20 +17,20 @@ git add .
 git commit -m "Add $1"
 
 # Set up Git credentials
-git_credentials() {
+#git_credentials() {
     #echo "Enter your Git username:"
     #read -r username
     #echo "Enter your Git password or access token:"
     #read -r -s password
    #echo
-}
+#}
 
-git_credentials
+#git_credentials
 
 # Run git push with credentials
 git push origin master
 
 # Clean up credentials
-unset username
-unset password
+#unset username
+#unset password
 
