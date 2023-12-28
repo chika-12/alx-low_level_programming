@@ -14,7 +14,7 @@ repo_path="/alx-low_level_programming/testing"
 
 # Git commands
 git add .
-git commit -m "Add $1"
+git commit -m "hello"
 
 # Set up Git credentials
 #git_credentials() {
