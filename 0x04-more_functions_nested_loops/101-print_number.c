@@ -1,30 +1,26 @@
 #include "main.h"
 /**
- * print_number - prints numbers
- * @n: parameter passed to function
- * Return: void
+ * print_number - print different numbers
+ *
+ * @number: parameter
+ * Return: 0
  */
-void print_number(int n)
+void print_number(int number)
 {
-	if (n < 0)
+	unsigned int new_num;
+
+	if (number < 0)
 	{
-		n = -n;
+		new_num = -number;
 		_putchar('-');
 	}
-	if (n > 999)
+	else
 	{
-		_putchar((n / 1000) + 48);
-		_putchar(((n % 100) / 100) + 48);
-		_putchar((((n % 100) % 100) / 10) + 48);
+		new_num = number;
 	}
-	else if (n > 99 && n < 1000)
+	if (new_num / 10)
 	{
-		_putchar((n / 100) + 48);
-		_putchar(((n % 100) / 10) + 48);
+		print_number(new_num / 10);
 	}
-	else if (n > 9 && n < 100)
-	{
-		_putchar((n / 10) + 48);
-	}
-	_putchar((n % 10) + 48);
+	_putchar((new_num % 10) + 48);
 }
