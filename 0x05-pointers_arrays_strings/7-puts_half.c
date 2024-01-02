@@ -12,12 +12,14 @@ void puts_half(char *str)
 	int index;
 	int half_len;
 
+	len = 0;
+
 	for (index = 0; str[index] != '\0'; index++)
 	{
 		len += 1;
 	}
 
-	if (len % 2 == 0)
+	if (len % 2 == 1)
 	{
 		half_len = len / 2;
 	}
