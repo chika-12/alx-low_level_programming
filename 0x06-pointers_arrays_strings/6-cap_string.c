@@ -7,9 +7,11 @@
 char *cap_string(char *str)
 {
 	int index;
+	int new_cap;
 
 	for (index = 0; str[index] != '\0'; index++)
 	{
+		new_cap = 0;
 		if (str[index] == '\t')
 		{
 			str[index] = ' ';
@@ -29,8 +31,13 @@ char *cap_string(char *str)
 			{
 				str[index] = str[index] - 32;
 			}
+			new_cap = 1;
+		}
+		else if (str[index] >= 'A' && str[index] <= 'Z'
+				&& new_cap != 1 && str[index] != str[0])
+		{
+			str[index] = str[index] + 32;
 		}
 	}
 	return (str);
 }
-
