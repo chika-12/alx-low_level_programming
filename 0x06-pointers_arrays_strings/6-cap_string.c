@@ -9,6 +9,10 @@ char *cap_string(char *str)
 	int index;
 	int new_cap;
 
+	if (str[0] >= 'a' && str[0] <= 'z')
+	{
+		str[0] = str[0] - 32;
+	}
 	for (index = 0; str[index] != '\0'; index++)
 	{
 		new_cap = 0;
