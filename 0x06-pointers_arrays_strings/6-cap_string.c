@@ -28,6 +28,10 @@ char *cap_string(char *str)
 		{
 			str[index] = str[index] + 32;
 		}
+		else
+		{
+			new_cap = 0;
+		}
 	}
 		
 	return (str);
