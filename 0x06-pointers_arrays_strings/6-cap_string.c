@@ -24,7 +24,7 @@ char *cap_string(char *str)
 			str[index] = str[index] - 32;
 			new_cap = 0;
 		}
-		else if(new_cap == 0 && str[index] >= 'A' && str[index] <= 'Z')
+		else if (new_cap == 0 && str[index] >= 'A' && str[index] <= 'Z')
 		{
 			str[index] = str[index] + 32;
 		}
@@ -33,6 +33,5 @@ char *cap_string(char *str)
 			new_cap = 0;
 		}
 	}
-		
 	return (str);
 }
