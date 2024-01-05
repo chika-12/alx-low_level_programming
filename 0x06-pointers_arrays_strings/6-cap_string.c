@@ -7,41 +7,28 @@
 char *cap_string(char *str)
 {
 	int index;
-	int new_cap;
+	int new_cap = 1;
 
-	if (str[0] >= 'a' && str[0] <= 'z')
-	{
-		str[0] = str[0] - 32;
-	}
 	for (index = 0; str[index] != '\0'; index++)
 	{
-		new_cap = 0;
-		if (str[index] == '\t')
-		{
-			str[index] = ' ';
-		}
 		if (str[index] == ' ' || str[index] == '.' || str[index] == '\t'
 				|| str[index] == '\n' || str[index] == ',' || str[index] == ';'
 				|| str[index] == '!' || str[index] == '?' || str[index] == '('
 				|| str[index] == ')' || str[index] == '"' || str[index] == '{'
 				|| str[index] == '}')
 		{
-			index++;
-			if (str[index] == ' ' || str[index] == '\n')
-			{
-				index++;
-			}
-			if (str[index] >= 'a' && str[index] <= 'z')
-			{
-				str[index] = str[index] - 32;
-			}
 			new_cap = 1;
 		}
-		else if (str[index] >= 'A' && str[index] <= 'Z'
-				&& new_cap != 1 && str[index] != str[0])
+		else if (new_cap == 1 && str[index] >= 'a' && str[index] <= 'z')
+		{
+			str[index] = str[index] - 32;
+			new_cap = 0;
+		}
+		else if(new_cap == 0 && str[index] >= 'A' && str[index] <= 'Z')
 		{
 			str[index] = str[index] + 32;
 		}
 	}
+		
 	return (str);
 }
