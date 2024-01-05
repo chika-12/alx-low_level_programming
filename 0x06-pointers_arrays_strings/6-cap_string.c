@@ -11,6 +11,10 @@ char *cap_string(char *str)
 
 	for (index = 0; str[index] != '\0'; index++)
 	{
+		if (str[index] == '\t')
+		{
+			str[index] = ' ';
+		}
 		if (str[index] == ' ' || str[index] == '.' || str[index] == '\t'
 				|| str[index] == '\n' || str[index] == ',' || str[index] == ';'
 				|| str[index] == '!' || str[index] == '?' || str[index] == '('
