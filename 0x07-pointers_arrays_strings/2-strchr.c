@@ -2,7 +2,7 @@
 /**
  * _strchr - Return a pointer to the first occurence of a character
  *
- * @s: string
+ * @string
  *
  * @c: character
  *
@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[index] == c)
 		{
-			return (&(s[index]));
+			return (char *)(s + index);
 		}
 	}
 	return (NULL);
