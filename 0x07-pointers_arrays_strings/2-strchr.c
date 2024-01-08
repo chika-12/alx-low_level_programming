@@ -2,7 +2,7 @@
 /**
  * _strchr - Return a pointer to the first occurence of a character
  *
- * @string
+ * @s: string
  *
  * @c: character
  *
