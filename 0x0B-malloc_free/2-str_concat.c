@@ -8,6 +8,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int index;
+	int len = 0;
 	char *ptr = NULL;
 	int length = strlen(s1) + strlen(s2);
 
@@ -26,8 +28,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		strcpy(ptr, s1);
-		strcpy(ptr, s2);
+		for (index = 0; s1[index] != '\0'; index++)
+		{
+			ptr[index] = s1[index];
+		}
+		len = index;
+		for (index = 0; s2[index] != '\0'; index++, len++)
+		{
+			ptr[len] = s2[index];
+		}
 	}
 	return (ptr);
 }
