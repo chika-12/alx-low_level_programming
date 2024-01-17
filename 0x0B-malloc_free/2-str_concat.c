@@ -9,9 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr = NULL;
-	int index;
 	int length = strlen(s1) + strlen(s2);
-	int len = 0;
 
 	if (s1 == NULL)
 	{
@@ -21,22 +19,15 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	ptr = malloc(sizeof(char) * (length + 1));
+	ptr = (char *)malloc(sizeof(char) * (length + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (index = 0; s1[index] != '\0'; index++)
-		{
-			ptr[index] = s1[index];
-		}
-		len = strlen(s1);
-		for (index = 0; s2[index] != '\0'; index++, len++)
-		{
-			ptr[len] = s2[index];
-		}
+		strcpy(ptr, s1);
+		strcpy(ptr, s2);
 	}
 	return (ptr);
 }
