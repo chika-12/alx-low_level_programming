@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * str_concat - concatenate two strings
- * @s1: first string
- * @s2: second string
+ * @str: first string
  *
  * Return: char
  */
@@ -43,6 +42,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	return (ptr);
 }
+/**
+ * _strlen - finds the length of a string
+ * @str: string parameter
+ * Return: int
+ */
 int _strlen(char *str)
 {
 	int index;
