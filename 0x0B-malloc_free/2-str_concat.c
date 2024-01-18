@@ -6,6 +6,7 @@
  *
  * Return: char
  */
+int _strlen(char *str);
 char *str_concat(char *s1, char *s2)
 {
 	size_t index;
@@ -21,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	length = strlen(s1) + strlen(s2);
+	length = _strlen(s1) + _strlen(s2);
 	ptr = (char *)malloc(sizeof(char) * (length + 1));
 	if (ptr == NULL)
 	{
@@ -41,4 +42,15 @@ char *str_concat(char *s1, char *s2)
 		ptr[len] = '\0';
 	}
 	return (ptr);
+}
+int _strlen(char *str)
+{
+	int index;
+	int len = 0;
+
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		len += 1;
+	}
+	return (len);
 }
