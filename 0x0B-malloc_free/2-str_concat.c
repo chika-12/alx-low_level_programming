@@ -8,19 +8,20 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int index;
-	int len = 0;
+	size_t index;
+	size_t len = 0;
 	char *ptr = NULL;
-	int length = strlen(s1) + strlen(s2);
+	size_t length;
 
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1 = " ";
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2 = " ";
 	}
+	length = strlen(s1) + strlen(s2);
 	ptr = (char *)malloc(sizeof(char) * (length + 1));
 	if (ptr == NULL)
 	{
@@ -37,6 +38,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			ptr[len] = s2[index];
 		}
+		ptr[len] = '\0';
 	}
 	return (ptr);
 }
