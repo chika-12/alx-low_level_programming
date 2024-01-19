@@ -8,10 +8,7 @@ unsigned int _strlen(char *str);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr = NULL;
-	unsigned int index;
-	unsigned int len;
-	unsigned int len2;
-	unsigned int total_len;
+	unsigned int index,len,len2,total_len;
 
 	if (s1 == NULL)
 	{
@@ -23,8 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	len = _strlen(s1);
 	len2 = _strlen(s2);
-	total_len = len + len2;
-	ptr = malloc(sizeof(char) * total_len + 1);
+	total_len = len + len2 + 1;
+	ptr = malloc(sizeof(char) * total_len);
 	if (ptr == NULL)
 	{
 		return (NULL);
