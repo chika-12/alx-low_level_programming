@@ -1,5 +1,7 @@
 #ifndef DOG_H_
 #define DOG_H_
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * dog_t - Typedef for struct dog
  */
