@@ -14,7 +14,16 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 
 	for (index = 0;  index < n; index++)
 	{
-		printf("%s", va_arg(str, const char *));
+		const char *new_char = va_arg(str, const char *);
+
+		if (new_char == NULL)
+		{
+			printf("(nil)");
+		}
+		else
+		{
+			printf("%s", new_char);
+		}
 		if (index < n - 1 && seperator != NULL)
 		{
 			printf("%s", seperator);
