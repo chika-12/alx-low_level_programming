@@ -26,6 +26,5 @@ size_t print_list(const list_t *h)
 		ptr = ptr->next;
 		count++;
 	}
-	printf("\n");
 	return (count);
 }
