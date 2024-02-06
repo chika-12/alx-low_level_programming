@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * freelistint2 - frees a list.
+ * free_listint2 - frees a list.
  * @head: list to be freed
  * Return: void
  */
