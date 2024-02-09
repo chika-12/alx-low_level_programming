@@ -5,6 +5,7 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
+#include <limits.h>
 /**
  * _putchar - prints putchar
  * @n: parameter
