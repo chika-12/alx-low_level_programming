@@ -28,14 +28,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes = read(file, buffer, letters);
 	if (bytes <= 0)
 	{
-		close(bytes);
+		close(file);
 		free(buffer);
 		return (0);
 	}
 	written = write(STDOUT_FILENO, buffer, bytes);
 	if (written < 0 || bytes != written)
 	{
-		close(written);
+		close(file);
 		free(buffer);
 		return (0);
 	}
