@@ -12,16 +12,18 @@ unsigned int _strspn(char *s, char *accept)
 	int idx;
 	unsigned int len = 0;
 
-	for (index = 0; accept[index] != '\0'; index++)
+	for (index = 0; s[index] != '\0'; index++)
 	{
-		for (idx = 0; s[idx] != '\0'; idx++)
+		for (idx = 0; accept[idx] != '\0'; idx++)
 		{
-			if (accept[index] == s[idx])
+			if (accept[idx] == s[index])
 			{
 				len += 1;
 				break;
 			}
 		}
+		if (s[index] != accept[idx])
+			break;
 	}
 	return (len);
 }
