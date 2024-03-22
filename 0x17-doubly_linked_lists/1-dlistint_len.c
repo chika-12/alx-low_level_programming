@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 
 	if (h == NULL)
 	{
-		return (EXIT_FAILURE);
+		return (count);
 	}
 	ptr = h;
 
